@@ -259,3 +259,4 @@ npm run build && npm run start
 - [docs/2_store.md](./docs/2_store.md) - 상태 관리 가이드
 - [docs/3_openapi-typescript.md](./docs/3_openapi-typescript.md) - 타입 생성 가이드
 # nb04-liv-it-fe
+# weLivFE
