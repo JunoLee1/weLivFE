@@ -19,7 +19,8 @@ import { deleteAdminUser, updateAdminUser, updateAdminUserJoinStatus } from '@/l
 
 export default function SuperAdminTable() {
   const { data, delete: deleteData, update: updateData, params, loading } = useAdminUserStore();
-  const { limit, page } = params;
+  const limit = params?.limit;
+  const page = params?.page;
 
   const [isOpen, setIsOpen] = useState(false);
   const [selectedItem, setSelectedItem] = useState<AdminUserDto | null>(null);

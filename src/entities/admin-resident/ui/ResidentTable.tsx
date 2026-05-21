@@ -18,7 +18,9 @@ export default function ResidentTable({
 
   const isEmpty = !data || data.length === 0;
 
-  const { limit, page } = useResidentStore(state => state.params);
+  const params = useResidentStore(state => state.params);
+  const limit = params?.limit;
+  const page = params?.page;
 
   return (
     <section className='mt-6 w-full rounded-[12px] border border-gray-200 p-8 text-[14px]'>
