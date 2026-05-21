@@ -52,6 +52,7 @@ export const getResidents = async (params: FindResidentsParams): Promise<Residen
  */
 export const getResident = async (id: string): Promise<ResidentDto> => {
   const response = await apiClient.get<ResidentDto>(`/residents/${id}`);
+  console.log(id)
   return response.data;
 };
 

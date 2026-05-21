@@ -1421,7 +1421,7 @@ export interface operations {
     };
     UsersController_findAllAdmin: {
         parameters: {
-            query: {
+            query?: {
                 /** @description 페이지 번호 */
                 page?: number;
                 /** @description 페이지 당 항목 수 */
@@ -1719,7 +1719,7 @@ export interface operations {
     };
     UsersController_findAllResidentUsers: {
         parameters: {
-            query: {
+            query?: {
                 /** @description 페이지 번호 */
                 page?: number;
                 /** @description 페이지 당 항목 수 */
@@ -2067,7 +2067,7 @@ export interface operations {
     };
     NotificationsController_findAll: {
         parameters: {
-            query: {
+            query?: {
                 /** @description 페이지 번호 */
                 page?: number;
                 /** @description 페이지 당 항목 수 */
@@ -2153,7 +2153,7 @@ export interface operations {
     };
     ResidentsController_findAllResidents: {
         parameters: {
-            query: {
+            query?: {
                 /** @description 페이지 번호 */
                 page?: number;
                 /** @description 페이지 당 항목 수 */
@@ -2468,7 +2468,7 @@ export interface operations {
     };
     ResidentsController_exportResidentsFile: {
         parameters: {
-            query: {
+            query?: {
                 /** @description 검색어 (이름, 연락처, 이메일) */
                 searchKeyword?: string;
                 building?: number;
@@ -2519,7 +2519,7 @@ export interface operations {
     };
     ApartmentsController_findAll: {
         parameters: {
-            query: {
+            query?: {
                 /** @description 페이지 번호 */
                 page?: number;
                 /** @description 페이지 당 항목 수 */
@@ -2608,7 +2608,7 @@ export interface operations {
     };
     NoticesController_findAll: {
         parameters: {
-            query: {
+            query?: {
                 /** @description 페이지 번호 */
                 page?: number;
                 /** @description 페이지 당 항목 수 */
@@ -3139,7 +3139,7 @@ export interface operations {
     };
     PollsController_findAll: {
         parameters: {
-            query: {
+            query?: {
                 /** @description 페이지 번호 */
                 page?: number;
                 /** @description 페이지 당 항목 수 */

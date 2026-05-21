@@ -271,13 +271,13 @@ export default function SuperAdminTable() {
                     </div>
                   </td>
                   <td className={tdClass}>
-                    <div className='line-clamp-1' title={item.adminOf.name}>
-                      {item.adminOf.name}
+                    <div className='line-clamp-1' title={item.adminOf?.name}>
+                      {item.adminOf?.name}
                     </div>
                   </td>
                   <td className={tdClass}>
-                    <div className='line-clamp-1' title={item.adminOf.address}>
-                      {item.adminOf.address}
+                    <div className='line-clamp-1' title={item.adminOf?.address}>
+                      {item.adminOf?.address}
                     </div>
                   </td>
                   <td className={tdClass}>

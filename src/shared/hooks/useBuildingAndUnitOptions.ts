@@ -20,7 +20,7 @@ export const useBuildingAndUnitOptions = () => {
     const options = [{value: 'all', label: '전체'}];
     if (apartment) {
       options.push(
-        ...apartment.buildings.map(building => ({value: String(building), label: `${building}동`}))
+       ...(apartment?.buildings ?? []).map(building => ({value: String(building), label: `${building}동`}))
       )
     }
     return options;
@@ -30,7 +30,7 @@ export const useBuildingAndUnitOptions = () => {
     const options = [{value: 'all', label: '전체'}];
     if (apartment) {
       options.push(
-        ...apartment.units.map(unit => ({value: String(unit), label: `${unit}호`}))
+       ...(apartment?.units ?? []).map(unit => ({value: String(unit), label: `${unit}호`}))
       )
     }
     return options;

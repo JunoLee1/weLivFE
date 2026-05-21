@@ -61,7 +61,7 @@ export const createResidentUser = async (data: ResidentSignupRequest): Promise<v
  */
 export const getAdminUsers = async (params: FindAdminsParams): Promise<AdminFindAllPageResponse> => {
   const response = await apiClient.get<AdminFindAllPageResponse>('/users/admins', { params });
-  return response.data;
+  return response.data.data;
 };
 
 /**
@@ -103,6 +103,7 @@ export const updateAdminUsersBatchJoinStatus = async (data: UpdateJoinStatusRequ
  * @param data - Join status to apply (APPROVED or REJECTED)
  */
 export const updateAdminUserJoinStatus = async (id: string, data: UpdateJoinStatusRequest): Promise<void> => {
+  console.log("id:",id)
   await apiClient.patch<void>(`/users/admins/${id}/join-status`, data);
 };
 
